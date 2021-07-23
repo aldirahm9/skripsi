@@ -1,0 +1,73 @@
+\babel@toc {bahasa}{}
+\babel@toc {bahasa}{}
+\babel@toc {english}{}
+\babel@toc {bahasa}{}
+\babel@toc {bahasa}{}
+\addvspace {10\p@ }
+\babel@toc {bahasa}{}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces \emph {Spiral Model}\relax }}{9}{figure.caption.11}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Simbol-simbol \emph {Use Case Diagram}\relax }}{12}{figure.caption.12}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Contoh \emph {Use Case Diagram}\relax }}{13}{figure.caption.13}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Simbol-simbol \emph {Class Diagram}\relax }}{15}{figure.caption.14}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Contoh \emph {Class Diagram}\relax }}{16}{figure.caption.15}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Simbol-simbol \emph {Activity Diagram}\relax }}{17}{figure.caption.16}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Contoh \emph {Activity Diagram}\relax }}{18}{figure.caption.17}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Contoh \emph {Database Relation}\relax }}{19}{figure.caption.18}
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Simbol-simbol \emph {Entity Relationship Diagram}\relax }}{20}{figure.caption.19}
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Contoh \emph {Entity Relationship Diagram}\relax }}{21}{figure.caption.20}
+\contentsline {figure}{\numberline {2.11}{\ignorespaces Contoh \emph {Entity Relationship Diagram}\relax }}{24}{figure.caption.21}
+\contentsline {figure}{\numberline {2.12}{\ignorespaces Rumus SHU KOPMA UNJ\relax }}{35}{figure.caption.22}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Desain \emph {Entity Relationship Diagram} Sistem KOPMA UNJ yang akan dikembangkan\relax }}{39}{figure.caption.23}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Desain \emph {Use Case Diagram} Sistem KOPMA UNJ yang akan dikembangkan\relax }}{41}{figure.caption.24}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Desain \emph {Class Diagram} Sistem KOPMA UNJ yang akan dikembangkan\relax }}{43}{figure.caption.25}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Desain \emph {Activity Diagram} Sistem Pendaftaran Anggota KOPMA UNJ\relax }}{45}{figure.caption.26}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Desain \emph {Activity Diagram} Sistem Pengelolaan Oleh \emph {Admin} KOPMA UNJ\relax }}{46}{figure.caption.27}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Desain \emph {Activity Diagram} Sistem Transaksi Oleh \emph {Admin} KOPMA UNJ\relax }}{47}{figure.caption.28}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Desain \emph {Activity Diagram} Sistem Pengelolaan Nilai Oleh Pengawas KOPMA UNJ\relax }}{49}{figure.caption.29}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Desain \emph {Database} Sistem KOPMA UNJ yang akan dikembangkan\relax }}{50}{figure.caption.30}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Tampilan Halaman \emph {Login User}\relax }}{51}{figure.caption.31}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Tampilan Halaman Pendaftaran Anggota KOPMA UNJ\relax }}{52}{figure.caption.32}
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Tampilan Halaman Biodata Anggota\relax }}{53}{figure.caption.33}
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Tampilan Halaman Transparansi SHU Milik Anggota\relax }}{53}{figure.caption.34}
+\contentsline {figure}{\numberline {3.13}{\ignorespaces Tampilan Halaman \emph {Submenu} Barang dalam Beranda Anggota\relax }}{54}{figure.caption.35}
+\contentsline {figure}{\numberline {3.14}{\ignorespaces Tampilan Halaman Beranda \emph {Admin}\relax }}{55}{figure.caption.36}
+\contentsline {figure}{\numberline {3.15}{\ignorespaces Tampilan Halaman Tambah Transaksi Pada \emph {Admin}\relax }}{55}{figure.caption.37}
+\contentsline {figure}{\numberline {3.16}{\ignorespaces Tampilan Halaman Verifikasi Milik \emph {Admin}\relax }}{56}{figure.caption.38}
+\contentsline {figure}{\numberline {3.17}{\ignorespaces Tampilan Halaman Kelola Penilaian Milik Pengawas\relax }}{57}{figure.caption.39}
+\contentsline {figure}{\numberline {3.18}{\ignorespaces Basis Data Sistem Informasi KOPMA UNJ\relax }}{58}{figure.caption.40}
+\contentsline {figure}{\numberline {3.19}{\ignorespaces Relasi Antar Tabel Basis Data Sistem Informasi KOPMA UNJ\relax }}{58}{figure.caption.41}
+\contentsline {figure}{\numberline {3.20}{\ignorespaces Tampilan Halaman \textit {Login} Sistem Informasi KOPMA UNJ\relax }}{59}{figure.caption.42}
+\contentsline {figure}{\numberline {3.21}{\ignorespaces Tampilan Halaman Pendaftaran Sistem Informasi KOPMA UNJ\relax }}{60}{figure.caption.43}
+\contentsline {figure}{\numberline {3.22}{\ignorespaces Tampilan Halaman Beranda \textit {Admin}\relax }}{61}{figure.caption.44}
+\contentsline {figure}{\numberline {3.23}{\ignorespaces Tampilan Halaman Biodata \textit {User}\relax }}{62}{figure.caption.45}
+\contentsline {figure}{\numberline {3.24}{\ignorespaces Tampilan Halaman Verifikasi Penerimaan Anggota KOPMA UNJ\relax }}{63}{figure.caption.46}
+\contentsline {figure}{\numberline {3.25}{\ignorespaces Tampilan Halaman Pengelolaan Arus Keuangan KOPMA UNJ\relax }}{64}{figure.caption.47}
+\contentsline {figure}{\numberline {3.26}{\ignorespaces Tampilan Halaman Pengelolaan untuk Memilih \textit {Admin}\relax }}{65}{figure.caption.48}
+\contentsline {figure}{\numberline {3.27}{\ignorespaces Tampilan Halaman Pengelolaan Anggota oleh \textit {Admin}\relax }}{66}{figure.caption.49}
+\contentsline {figure}{\numberline {3.28}{\ignorespaces Tampilan Halaman Tambah Transaksi oleh \textit {Admin}\relax }}{67}{figure.caption.50}
+\contentsline {figure}{\numberline {3.29}{\ignorespaces Tampilan Halaman Penyuntingan Data Keanggotaan oleh \textit {Admin}\relax }}{67}{figure.caption.51}
+\contentsline {figure}{\numberline {3.30}{\ignorespaces Tampilan Menu Cetak Data Barang pada \textit {Admin}\relax }}{68}{figure.caption.52}
+\contentsline {figure}{\numberline {3.31}{\ignorespaces Tampilan Hasil Cetak Data Barang pada \textit {Microsoft Excel}\relax }}{68}{figure.caption.53}
+\contentsline {figure}{\numberline {3.32}{\ignorespaces Tampilan Halaman Beranda Anggota\relax }}{69}{figure.caption.54}
+\contentsline {figure}{\numberline {3.33}{\ignorespaces Tampilan Halaman Daftar Barang pada Anggota\relax }}{70}{figure.caption.55}
+\contentsline {figure}{\numberline {3.34}{\ignorespaces Tampilan Halaman Beranda Pengawas\relax }}{71}{figure.caption.56}
+\contentsline {figure}{\numberline {3.35}{\ignorespaces Tampilan Halaman Tambah Penilaian pada Pengawas\relax }}{71}{figure.caption.57}
+\contentsline {figure}{\numberline {3.36}{\ignorespaces Tampilan Halaman Sunting Data Penilaian pada Pengawas\relax }}{72}{figure.caption.58}
+\contentsline {figure}{\numberline {3.37}{\ignorespaces Tampilan Halaman Daftar Penilaian pada Pengawas\relax }}{72}{figure.caption.59}
+\contentsline {figure}{\numberline {3.38}{\ignorespaces Struktur Pemrograman \textit {Controller} Anggota\relax }}{73}{figure.caption.60}
+\contentsline {figure}{\numberline {3.39}{\ignorespaces Struktur Pemrograman \textit {Model} Anggota\relax }}{74}{figure.caption.61}
+\contentsline {figure}{\numberline {3.40}{\ignorespaces Struktur Pemrograman \textit {View} Anggota\relax }}{74}{figure.caption.62}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Grafik Hasil Penyebaran Kuesioner \textit {User Acceptance Test} pada \textit {Admin}\relax }}{84}{figure.caption.66}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Grafik Hasil Penyebaran Kuesioner \textit {User Acceptance Test} pada Anggota\relax }}{87}{figure.caption.69}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Grafik Hasil Penyebaran Kuesioner \textit {User Acceptance Test} pada Pengawas\relax }}{90}{figure.caption.72}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }

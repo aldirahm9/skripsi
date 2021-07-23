@@ -1,0 +1,69 @@
+\babel@toc {bahasa}{}
+\babel@toc {bahasa}{}
+\contentsline {chapter}{HALAMAN PERSEMBAHAN}{v}{chapter*.4}
+\contentsline {chapter}{KATA PENGANTAR}{vi}{chapter*.5}
+\contentsline {chapter}{ABSTRAK}{viii}{chapter*.6}
+\babel@toc {english}{}
+\contentsline {chapter}{\emph {ABSTRACT}}{ix}{chapter*.7}
+\babel@toc {bahasa}{}
+\contentsline {chapter}{DAFTAR ISI}{xii}{chapter*.8}
+\contentsline {chapter}{DAFTAR GAMBAR}{xv}{chapter*.9}
+\contentsline {chapter}{DAFTAR TABEL}{xvi}{chapter*.10}
+\babel@toc {bahasa}{}
+\contentsline {chapter}{\numberline {I}PENDAHULUAN}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Latar Belakang Masalah}{1}{section.1.1}
+\contentsline {section}{\numberline {1.2}Rumusan Masalah}{4}{section.1.2}
+\contentsline {section}{\numberline {1.3}Pembatasan Masalah}{4}{section.1.3}
+\contentsline {section}{\numberline {1.4}Tujuan Penelitian}{5}{section.1.4}
+\contentsline {section}{\numberline {1.5}Manfaat Penelitian}{5}{section.1.5}
+\babel@toc {bahasa}{}
+\contentsline {chapter}{\numberline {II}KAJIAN PUSTAKA}{7}{chapter.2}
+\contentsline {section}{\numberline {2.1}\emph {System Develop Life Cycle (SDLC)}}{7}{section.2.1}
+\contentsline {section}{\numberline {2.2}\emph {Unified Modelling Language (UML)}}{10}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}\emph {Use Case Diagram}}{11}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}\emph {Class Diagram}}{13}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}\emph {Activity Diagram}}{16}{subsection.2.2.3}
+\contentsline {section}{\numberline {2.3}Basis Data}{18}{section.2.3}
+\contentsline {section}{\numberline {2.4}\emph {Entity Relationship Diagram (ERD)}}{19}{section.2.4}
+\contentsline {section}{\numberline {2.5}Sistem Informasi}{21}{section.2.5}
+\contentsline {subsection}{\numberline {2.5.1}Sistem}{21}{subsection.2.5.1}
+\contentsline {subsection}{\numberline {2.5.2}Informasi}{22}{subsection.2.5.2}
+\contentsline {subsection}{\numberline {2.5.3}Sistem Informasi}{22}{subsection.2.5.3}
+\contentsline {section}{\numberline {2.6}\emph {Website}}{25}{section.2.6}
+\contentsline {section}{\numberline {2.7}\emph {Framework Codeigniter}}{25}{section.2.7}
+\contentsline {section}{\numberline {2.8}\emph {Framework Bootstrap}}{27}{section.2.8}
+\contentsline {section}{\numberline {2.9}Koperasi Mahasiswa Universitas Negeri Jakarta (KOPMA UNJ)}{27}{section.2.9}
+\contentsline {subsection}{\numberline {2.9.1}Perangkat Organisasi Koperasi Mahasiswa Universitas Negeri Jakarta}{28}{subsection.2.9.1}
+\contentsline {subsection}{\numberline {2.9.2}Visi dan Misi Koperasi Mahasiswa Universitas Negeri Jakarta}{30}{subsection.2.9.2}
+\contentsline {subsection}{\numberline {2.9.3}Aspek-aspek Kegiatan Koperasi Mahasiswa Universitas Negeri Jakarta}{31}{subsection.2.9.3}
+\contentsline {chapter}{\numberline {III}IMPLEMENTASI PROGRAM DAN REKAYASA PRODUK}{37}{chapter.3}
+\contentsline {section}{\numberline {3.1}Identifikasi Masalah}{37}{section.3.1}
+\contentsline {section}{\numberline {3.2}Perancangan Desain Sistem}{38}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}\emph {Entity Relationship Diagram}}{38}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}\emph {Use Case Diagram}}{40}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}\emph {Class Diagram}}{41}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.4}\emph {Activity Diagram}}{44}{subsection.3.2.4}
+\contentsline {subsection}{\numberline {3.2.5}\emph {Database}}{49}{subsection.3.2.5}
+\contentsline {subsection}{\numberline {3.2.6}\emph {Mock-Up}}{51}{subsection.3.2.6}
+\contentsline {section}{\numberline {3.3}Implementasi Rancangan Program}{57}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Basis Data (\textit {Database})}{57}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Desaim Tampilan Antarmuka (Front-End)}{59}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}Implementasi Sistem (Back-End)}{72}{subsection.3.3.3}
+\contentsline {chapter}{\numberline {IV}UJI COBA DAN HASIL UJI COBA}{76}{chapter.4}
+\contentsline {section}{\numberline {4.1}Uji Coba}{76}{section.4.1}
+\contentsline {section}{\numberline {4.2}Hasil Uji Coba}{80}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}\textit {Admin}}{80}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}\textit {Anggota}}{85}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}\textit {Pengawas}}{88}{subsection.4.2.3}
+\contentsline {chapter}{\numberline {V}KESIMPULAN DAN SARAN}{91}{chapter.5}
+\contentsline {section}{\numberline {5.1}Kesimpulan}{91}{section.5.1}
+\contentsline {section}{\numberline {5.2}Saran}{92}{section.5.2}
+\contentsline {chapter}{DAFTAR PUSTAKA}{96}{chapter*.73}
+\contentsline {chapter}{LAMPIRAN}{97}{chapter*.73}
+\contentsline {chapter}{\numberline {A}Analisis Kebutuhan (\textit {User Requirement})}{97}{appendix.A}
+\contentsline {chapter}{\numberline {B}Kuesioener \textit {User Accpetance Test} pada \textit {Admin}}{102}{appendix.B}
+\contentsline {chapter}{\numberline {C}Kuesioener \textit {User Accpetance Test} pada Anggota}{107}{appendix.C}
+\contentsline {chapter}{\numberline {D}Kuesioener \textit {User Accpetance Test} pada Pengawas}{110}{appendix.D}
+\contentsline {chapter}{\numberline {E}Sampel Kode \textit {Controller Admin} pada Anggota}{113}{appendix.E}
+\contentsline {chapter}{\numberline {F}Sampel Kode Model \textit {Admin} pada Anggota}{121}{appendix.F}
+\contentsline {chapter}{\numberline {G}Sampel Kode \textit {View Admin} pada Daftar Anggota}{133}{appendix.G}

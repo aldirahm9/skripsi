@@ -1,0 +1,231 @@
+%-------------------------------------------------------------------------------
+%                      Template Naskah Skripsi
+%               	Berdasarkan format JTETI FT UGM
+% 						(c) @gunturdputra 2014
+%-------------------------------------------------------------------------------
+
+%Template pembuatan naskah skripsi.
+\documentclass{jtetiskripsi}
+
+%Untuk prefiks pada daftar gambar dan tabel
+\usepackage[titles]{tocloft}
+\renewcommand\cftfigpresnum{Gambar\  }
+\renewcommand\cfttabpresnum{Tabel\   }
+
+%Untuk hyperlink dan table of content
+\usepackage{hyperref}
+\newlength{\mylenf}
+\settowidth{\mylenf}{\cftfigpresnum}
+\setlength{\cftfignumwidth}{\dimexpr\mylenf+2em}
+\setlength{\cfttabnumwidth}{\dimexpr\mylenf+2em}
+
+%Untuk Bold Face pada Keterangan Gambar
+\usepackage[labelfont=bf]{caption}
+%Untuk caption dan subcaption
+\usepackage{caption}
+\usepackage{subcaption}
+
+%pdf
+\usepackage{pdfpages}
+
+%table
+\usepackage{graphics}
+
+\usepackage{wrapfig}
+
+\usepackage{natbib}
+\setlength\bibhang{12mm}
+
+
+%-----------------------------------------------------------------
+%Disini awal masukan untuk data proposal skripsi
+%-----------------------------------------------------------------
+\titleind{Rancang Bangun Sistem Informasi Monitoring Kegiatan Belajar Mengajar menggunakan
+\emph{Web Service} SIAKAD Di Rumpun Matematika FMIPA UNJ}
+
+\fullname{Aldi Rahmansyah}
+
+\idnum{3145161324}
+
+\approvaldate{}
+
+\degree{Sarjana Ilmu Komputer}
+
+\yearsubmit{2021}
+
+\program{Ilmu Komputer}
+
+\dept{Ilmu Komputer}
+
+\firstsupervisor{Med Irzal, M.Kom.}
+\firstnip{}
+
+\secondsupervisor{Ir. Fariani Hermin Indiyah, M.T}
+\secondnip{}
+
+%hypenation
+
+\hyphenation{
+me-ngum-pul-kan
+ma-su-kan
+DE-VE-LOP-MENT
+Re-trie-ved
+ke-se-jah-te-ra-an
+di-la-ku-kan
+sub-me-nu
+pe-nam-ba-han
+meng-gam-bar-kan
+me-ngun-tung-kan
+meng-gu-na-kan
+di-gu-na-kan
+per-ngem-ba-ngan
+bra-in-wa-re
+KOP-MA
+di-ja-lan-kan
+ke-wa-ji-ban
+ser-ver
+Mul-ti-pur-pose
+XAM-PP
+Mul-yo-no
+pe-rang-kat
+mem-pro-ses
+me-la-ku-kan
+ke-wa-jib-an
+me-ru-pa-kan
+di-bu-tuh-kan
+pe-ni-lai-an
+ber-kua-li-tas
+a-kan
+}
+
+%-----------------------------------------------------------------
+%Disini akhir masukan untuk data proposal skripsi
+%-----------------------------------------------------------------
+
+\begin{document}
+
+\cover
+
+\include{pengesahan}
+%\include{persetujuan}
+%\include{orisinalitas}
+
+%-----------------------------------------------------------------
+%Disini awal masukan Acknowledment
+%-----------------------------------------------------------------
+%\acknowledgment
+%\begin{flushright}
+%	\emph{Untuk Bapak dan Mama.}
+%\end{flushright}
+%-----------------------------------------------------------------
+%Disini awal masukan untuk Prakata
+%-----------------------------------------------------------------
+
+\preface
+\begin{onehalfspace}
+Puji dan syukur penulis panjatkan kepada Allah SWT atas segala rahmat, berkah dan hidayah-Nya sehingga penulis dapat menyelesaikan proposal skripsi yang berjudul "Rancang Bangun Sistem Informasi Monitoring Kegiatan Belajar Mengajar Menggunakan \textit{Web Service} Di Rumpun Matematika FMIPA UNJ" dengan baik. Proposal skripsi ini dibuat dengan tujuan untuk memenuhi salah satu syarat memperoleh gelar Sarjana Komputer.  
+
+Dalam proses pembuatan proposal skripsi ini, penulis mendapat banyak bantuan dan dorongan. Oleh karena itu, penulis ingin menyampaikan rasa terima kasih kepada Bapak Med Irzal, M.Kom selaku Dosen Pembimbing I dan Ibu Ir. Fariani Hermin Indiyah, M.T selaku Dosen Pembimbing II yang telah membimbing, mengarahkan, mengoreksi, serta memberikan berbagai saran dan masukan yang sangat bermanfaat dalam penyusunan proposal skripsi ini.
+
+Dalam penyusunan proposal skripsi ini, penulis menyadari bahwa proposal skripsi yang telah dibuat ini masih sangat jauh dari kata sempurna dengan segala keterbatasan ilmu dan pengetahuan penulis sendiri. Baik dari segi penulisan, materi, dan bahasa. Oleh karena itu, penulis sangat membutuhkan kritik dan saran untuk dijadikan sebagai pembelajaran dan untuk membantu penulis menjadi lebih baik lagi kedepannya.
+
+Akhir kata, penulis berharap agar proposal yang telah dibuat ini dapat memberikan manfaat kepada semua pihak, khususnya penulis sendiri. Penulis juga berharap ditulisnya proposal skripsi ini dapat menjadi motivasi dan memberikan semangat bagi rekan-rekan yang sedang dan akan menyusun proposal skripsi. Semoga Allah SWT senantiasa membalas kebaikan semua pihak yang telah membantu penulis dalam menyusun proposal skripsi ini.
+\end{onehalfspace}
+\vspace{.5cm}
+
+\begin{tabular}{p{7.5cm}c}
+	&Jakarta, 2 Juni 2021\\
+	&\\
+	&\\
+	&\\
+	&\\
+	&\textbf{Penulis}
+\end{tabular}
+
+
+%-----------------------------------------------------------------
+%Disini awal masukan Intisari
+%-----------------------------------------------------------------
+%\begin{abstractind}
+%\textbf{MUHAMMAD YAN HANDOKO}. 	\textbf{Perancangan Sistem Informasi Koperasi Serba Usaha Berbasis \emph{Website} Pada Lembaga Koperasi Mahasiswa Universitas Negeri Jakarta}. Skripsi. Fakultas Matematika dan Ilmu Pengetahuan Alam, Universitas Negeri Jakarta. 2019. Di bawah bimbingan Ratna Widyati, S.Si, M.Kom dan Drs. Mulyono, M.Kom.
+%\vskip1cm
+	
+%Koperasi Mahasiswa Universitas Negeri Jakarta (KOPMA UNJ) merupakan organisasi kemahasiswaan tingkat universitas yang bergerak dalam bidang perkoperasian. KOPMA UNJ merupakan koperasi serba usaha, yang tujuan utamanya adalah menyejahterakan anggota koperasi. Aspek perkoperasian yang dijalankan KOPMA UNJ adalah simpanan dan usaha. Pada prosesnya, pengelolaan dana simpanan akan digunakan untuk pembelian barang usaha yang pada akhirnya akan menghasilkan keuntungan untuk anggota yang disebut sisa hasil usaha (shu). Skripsi ini bertujuan untuk membangun sistem informasi KOPMA UNJ berbasis \textit{website} agar memudahkan pengurus KOPMA UNJ dalam mengelola dana simpanan dan usaha koperasi, serta agar anggota KOPMA UNJ dapat mengetahui transparansi dana simpanan yang mereka bayarkan kapanpun dan dimanapun. Sistem informasi KOPMA UNJ berbasis \textit{website} dikembangkan menggunakan metode pengembangan perangkat lunak (\textit{system development life cycle}) model \textit{spiral}. Model \textit{spiral} memiliki 4 tahapan pengembangan, yaitu analisis kebutuhan, desain sistem, implementasi, dan \textit{maintenance}. Sistem informasi KOPMA UNJ dibangun menggunakan \textit{framework codeigniter} untuk bagian \textit{back-end} dan \textit{framework bootstrap} untuk tampilan \textit{user} \textit{front-end}. \textit{User} yang ada pada sistem informasi KOPMA UNJ berjumlah 3, yaitu \textit{admin} yang dapat mengelola seluruh data simpanan dan usaha, anggota yang dapat mengetahui transparansi seluruh data, dan pengawas yang dapat mengelola data penilaian.
+	
+%	\bigskip
+%	\noindent
+%	\textbf{Kata kunci :} \textit{Webite}, sistem informasi, model \textit{spiral}, \textit{framework codeigniter}, \textit{framework bootstrap}, koperasi, simpanan, usaha.
+%\end{abstractind}
+
+%\begin{abstracteng}
+
+%\textbf {MUHAMMAD YAN HANDOKO}. \textbf {Designing a Website-Based Multipurpose Cooperative Information System at the Koperasi Mahasiswa Universitas Negeri Jakarta}. Thesis. Faculty of Mathematics and Natural Sciences, State University of Jakarta. 2019. Supervised by Ratna Widyati, S.Si, M.Kom and Drs. Mulyono, M.Kom.
+%\vskip1cm
+
+%Koperasi Mahasiswa Universitas Negeri Jakarta (KOPMA UNJ) is a university-level student organization engaged in cooperatives. KOPMA UNJ is a multi-business cooperative, where the main goal is for cooperative member's prosperity. The cooperative aspects carried out by KOPMA UNJ are savings and business. For the process, the management of deposit funds will be used for purchasing business goods where will give benefits for members called sisa hasil usaha (shu). This thesis aims to build a website-based KOPMA UNJ information system in order to make it easier administrators of KOPMA UNJ to manage savings and cooperative business funds, and also for members of KOPMA UNJ will know the transparency of their deposit funds they have paid. Website-based KOPMA UNJ information system have been developed using a spiral model software development (system development life cycle) method. The spiral model have 4 stages of development, there are needs analysis, system design, implementation, and maintenance. The KOPMA UNJ information system was built using the framework codeigniter for the back-end and framework bootstrap for user front-end display. There are three users in the KOPMA UNJ information system, those are 'admin' where can manage all deposit and business data, 'members' where can find out the transparency of all data, and 'supervisors' where can manage the assesment data.
+
+%\bigskip
+%\noindent
+%\textbf {Keywords:} Website, information system, spiral model, framework codeigniter, framework bootstrap, cooperative, savings, business.
+%\end{abstracteng}
+
+%-----------------------------------------------------------------
+%Disini akhir masukan Intisari
+%-----------------------------------------------------------------
+%-----------------------------------------------------------------
+
+%-----------------------------------------------------------------
+%Disini akhir masukan untuk muka skripsi
+%-----------------------------------------------------------------
+
+
+\tableofcontents 
+\addcontentsline{toc}{chapter}{DAFTAR ISI}
+\listoffigures
+\addcontentsline{toc}{chapter}{DAFTAR GAMBAR}
+\listoftables
+\addcontentsline{toc}{chapter}{DAFTAR TABEL}
+
+\begin{counterpage}
+\end{counterpage}
+%Disini awal masukan untuk Bab
+%-----------------------------------------------------------------
+\include{bab1}
+
+\include{bab2}
+
+\include{bab3}
+
+%\include{bab4}
+
+%\include{bab5}
+
+%-----------------------------------------------------------------
+%Disini akhir masukan Bab
+%-----------------------------------------------------------------
+
+
+%-----------------------------------------------------------------
+% Disini awal masukan untuk Daftar Pustaka
+% - Daftar pustaka diambil dari file .bib yang ada pada folder ini
+%   juga.
+% - Untuk memudahkan dalam memanajemen dan menggenerate file .bib
+%   gunakan reference manager seperti Mendeley, Zotero, EndNote,
+%   dll.
+%-----------------------------------------------------------------
+
+\bibliographystyle{apalike}
+\bibliography{myrefs}
+
+
+\addcontentsline{toc}{chapter}{DAFTAR PUSTAKA}
+%-----------------------------------------------------------------
+%Disini akhir masukan Daftar Pustaka
+%-----------------------------------------------------------------
+
+\include{lampiran}
+
+%\include{cv}
+
+
+\end{document}

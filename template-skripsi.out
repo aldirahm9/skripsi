@@ -1,0 +1,63 @@
+\BOOKMARK [0][-]{chapter*.4}{HALAMAN PERSEMBAHAN}{}% 1
+\BOOKMARK [0][-]{chapter*.5}{KATA PENGANTAR}{}% 2
+\BOOKMARK [0][-]{chapter*.6}{ABSTRAK}{}% 3
+\BOOKMARK [0][-]{chapter*.7}{ABSTRACT}{}% 4
+\BOOKMARK [0][-]{chapter*.8}{DAFTAR ISI}{}% 5
+\BOOKMARK [0][-]{chapter*.9}{DAFTAR GAMBAR}{}% 6
+\BOOKMARK [0][-]{chapter*.10}{DAFTAR TABEL}{}% 7
+\BOOKMARK [0][-]{chapter.1}{PENDAHULUAN}{}% 8
+\BOOKMARK [1][-]{section.1.1}{Latar Belakang Masalah}{chapter.1}% 9
+\BOOKMARK [1][-]{section.1.2}{Rumusan Masalah}{chapter.1}% 10
+\BOOKMARK [1][-]{section.1.3}{Pembatasan Masalah}{chapter.1}% 11
+\BOOKMARK [1][-]{section.1.4}{Tujuan Penelitian}{chapter.1}% 12
+\BOOKMARK [1][-]{section.1.5}{Manfaat Penelitian}{chapter.1}% 13
+\BOOKMARK [0][-]{chapter.2}{KAJIAN PUSTAKA}{}% 14
+\BOOKMARK [1][-]{section.2.1}{System Develop Life Cycle \(SDLC\)}{chapter.2}% 15
+\BOOKMARK [1][-]{section.2.2}{Unified Modelling Language \(UML\)}{chapter.2}% 16
+\BOOKMARK [2][-]{subsection.2.2.1}{Use Case Diagram}{section.2.2}% 17
+\BOOKMARK [2][-]{subsection.2.2.2}{Class Diagram}{section.2.2}% 18
+\BOOKMARK [2][-]{subsection.2.2.3}{Activity Diagram}{section.2.2}% 19
+\BOOKMARK [1][-]{section.2.3}{Basis Data}{chapter.2}% 20
+\BOOKMARK [1][-]{section.2.4}{Entity Relationship Diagram \(ERD\)}{chapter.2}% 21
+\BOOKMARK [1][-]{section.2.5}{Sistem Informasi}{chapter.2}% 22
+\BOOKMARK [2][-]{subsection.2.5.1}{Sistem}{section.2.5}% 23
+\BOOKMARK [2][-]{subsection.2.5.2}{Informasi}{section.2.5}% 24
+\BOOKMARK [2][-]{subsection.2.5.3}{Sistem Informasi}{section.2.5}% 25
+\BOOKMARK [1][-]{section.2.6}{Website}{chapter.2}% 26
+\BOOKMARK [1][-]{section.2.7}{Framework Codeigniter}{chapter.2}% 27
+\BOOKMARK [1][-]{section.2.8}{Framework Bootstrap}{chapter.2}% 28
+\BOOKMARK [1][-]{section.2.9}{Koperasi Mahasiswa Universitas Negeri Jakarta \(KOPMA UNJ\)}{chapter.2}% 29
+\BOOKMARK [2][-]{subsection.2.9.1}{Perangkat Organisasi Koperasi Mahasiswa Universitas Negeri Jakarta}{section.2.9}% 30
+\BOOKMARK [2][-]{subsection.2.9.2}{Visi dan Misi Koperasi Mahasiswa Universitas Negeri Jakarta}{section.2.9}% 31
+\BOOKMARK [2][-]{subsection.2.9.3}{Aspek-aspek Kegiatan Koperasi Mahasiswa Universitas Negeri Jakarta}{section.2.9}% 32
+\BOOKMARK [0][-]{chapter.3}{IMPLEMENTASI PROGRAM DAN REKAYASA PRODUK}{}% 33
+\BOOKMARK [1][-]{section.3.1}{Identifikasi Masalah}{chapter.3}% 34
+\BOOKMARK [1][-]{section.3.2}{Perancangan Desain Sistem}{chapter.3}% 35
+\BOOKMARK [2][-]{subsection.3.2.1}{Entity Relationship Diagram}{section.3.2}% 36
+\BOOKMARK [2][-]{subsection.3.2.2}{Use Case Diagram}{section.3.2}% 37
+\BOOKMARK [2][-]{subsection.3.2.3}{Class Diagram}{section.3.2}% 38
+\BOOKMARK [2][-]{subsection.3.2.4}{Activity Diagram}{section.3.2}% 39
+\BOOKMARK [2][-]{subsection.3.2.5}{Database}{section.3.2}% 40
+\BOOKMARK [2][-]{subsection.3.2.6}{Mock-Up}{section.3.2}% 41
+\BOOKMARK [1][-]{section.3.3}{Implementasi Rancangan Program}{chapter.3}% 42
+\BOOKMARK [2][-]{subsection.3.3.1}{Basis Data \(Database\)}{section.3.3}% 43
+\BOOKMARK [2][-]{subsection.3.3.2}{Desaim Tampilan Antarmuka \(Front-End\)}{section.3.3}% 44
+\BOOKMARK [2][-]{subsection.3.3.3}{Implementasi Sistem \(Back-End\)}{section.3.3}% 45
+\BOOKMARK [0][-]{chapter.4}{UJI COBA DAN HASIL UJI COBA}{}% 46
+\BOOKMARK [1][-]{section.4.1}{Uji Coba}{chapter.4}% 47
+\BOOKMARK [1][-]{section.4.2}{Hasil Uji Coba}{chapter.4}% 48
+\BOOKMARK [2][-]{subsection.4.2.1}{Admin}{section.4.2}% 49
+\BOOKMARK [2][-]{subsection.4.2.2}{Anggota}{section.4.2}% 50
+\BOOKMARK [2][-]{subsection.4.2.3}{Pengawas}{section.4.2}% 51
+\BOOKMARK [0][-]{chapter.5}{KESIMPULAN DAN SARAN}{}% 52
+\BOOKMARK [1][-]{section.5.1}{Kesimpulan}{chapter.5}% 53
+\BOOKMARK [1][-]{section.5.2}{Saran}{chapter.5}% 54
+\BOOKMARK [0][-]{chapter*.73}{DAFTAR PUSTAKA}{}% 55
+\BOOKMARK [0][-]{chapter*.73}{LAMPIRAN}{}% 56
+\BOOKMARK [0][-]{appendix.A}{Analisis Kebutuhan \(User Requirement\)}{}% 57
+\BOOKMARK [0][-]{appendix.B}{Kuesioener User Accpetance Test pada Admin}{}% 58
+\BOOKMARK [0][-]{appendix.C}{Kuesioener User Accpetance Test pada Anggota}{}% 59
+\BOOKMARK [0][-]{appendix.D}{Kuesioener User Accpetance Test pada Pengawas}{}% 60
+\BOOKMARK [0][-]{appendix.E}{Sampel Kode Controller Admin pada Anggota}{}% 61
+\BOOKMARK [0][-]{appendix.F}{Sampel Kode Model Admin pada Anggota}{}% 62
+\BOOKMARK [0][-]{appendix.G}{Sampel Kode View Admin pada Daftar Anggota}{}% 63
