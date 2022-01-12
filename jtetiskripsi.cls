@@ -95,14 +95,14 @@
 %------------------------------------------------------------
 %Redefine chapter and sections
 %------------------------------------------------------------
-\setcounter{secnumdepth}{2}
+\setcounter{secnumdepth}{3}
 \renewcommand \thepart {\@Roman\c@part}
 \renewcommand \thechapter {\@Roman\c@chapter}
 %\renewcommand \thesection {\@arabic\c@section.}
 \renewcommand \thesection {\@arabic\c@chapter.\@arabic\c@section}
 %\renewcommand\thesubsection {\@alph\c@subsection.}
 \renewcommand\thesubsection {\@arabic\c@chapter.\@arabic\c@section.\@arabic\c@subsection}
-%\renewcommand\thesubsubsection{\@roman\c@subsubsection.}
+\renewcommand\thesubsubsection{\@arabic\c@chapter.\@arabic\c@section.\@arabic\c@subsection.\@arabic\c@subsubsection}
 %\renewcommand\thesubsubsection{}
 \renewcommand\appendix{\par
   \setcounter{chapter}{0}%
@@ -143,9 +143,13 @@
 %                                    {3.25ex \@plus1ex \@minus.2ex}%
 %                                    {-1em}%
 %                                    {\normalfont\normalsize\bfseries}}
+%\renewcommand{\subsubsection}{\@startsection{subsubsection}{3}{\z@}%
+%                                  {3.25ex \@plus1ex \@minus.2ex}%
+%                                    {-1em}%			old
+%                                    {\normalfont\normalsize\bfseries}}
 \renewcommand{\subsubsection}{\@startsection{subsubsection}{3}{\z@}%
-                                    {3.25ex \@plus1ex \@minus.2ex}%
-                                    {-1em}%
+                                    {-3.25ex \@plus -1ex \@minus -.2ex}%
+                                     {1.5ex \@plus .2ex}%
                                     {\normalfont\normalsize\bfseries}}
 \renewcommand{\paragraph}{\subparagraph}
 

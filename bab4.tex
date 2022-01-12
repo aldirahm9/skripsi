@@ -7,102 +7,71 @@
 \chapter{UJI COBA DAN HASIL UJI COBA}
 
 \section{Uji Coba}
-Uji coba sistem dilakukan terhadap 30 responden anggota KOPMA UNJ dengan rincian, \textit{admin} yang terdiri dari 2 responden, pengawas yang terdiri dari 3 responden, dan anggota yang terdiri dari 25 responden. Setiap responden akan melakukan uji coba terhadap sistem yang dibuat berdasarkan peran masing-masing responden. Uji coba yang dilakukan menggunakan data dari hasil sebaran kuesioner \textit{User Acceptance Test}. \textit{User Acceptance Test} bertujuan untuk mengetahui perihal sistem yang dikembangkan apakah sudah sesuai dengan kebutuhan \textit{user} atau belum. Skala yang digunakan dalam penelitian ini adalah skala \textit{likert}.
-
-Langkah-langkah pengujian sistem informasi Koperasi Mahasiswa Universitas Negeri Jakarta yang akan dilakukan adalah sebagai berikut:
+	Uji coba pada sistem dilakukan terhadap ANGKA responden mahasiswa yang pernah atau sedang menjadi penanggung jawab kelas dan ANGKA dosen dimana di antaranya ANGKA TPjM. Setiap responden akan menguji coba sistem yang telah dikembangkan berdasarkan peran masing-masing responden. Uji coba yang dilakukan menggunakan data yang didapatkan dari hasil sebaran kuesioner \textit{User Acceptance Test}. \textit{User Acceptance Test} bertujuan untuk mengetahui apakah sistem yang dibuat sudah sesuai dengan kebutuhan \textit{user} atau belum. Berikut langkah-langkah pengujian yang akan dilakukan pada sistem informasi Koperasi Mahasiswa Universitas Negeri Jakarta:
 \begin{enumerate}
-	\item \textit{User} melakukan pendaftaran anggota.
-	\item \textit{Admin} melakukan verifikasi penerimaan anggota.
-	\item \textit Seluruh \textit{user} dapat mengelola biodata pribadi.
-	\item \textit{Admin} mengelola status keanggotaan setiap \textit{user} (\textit{admin}, pengawas, atau anggota biasa).
-	\item Anggota dan pengawas yang sudah memiliki akun dapat mengakses ke dalam sistem sesuai berandanya masing-masing.
-	\item \textit{Admin} menambahkan data barang, stok, simpanan, transaksi anggota, dan keuangan.
-	\item Data yang \textit{admin} tambahkan akan muncul dan dapat dilihat di beranda semua \textit{user}.
-	\item \textit{Admin} mengelola (sunting dan hapus) data barang, stok, simpanan, transaksi anggota, dan keuangan.
-	\item Data yang \textit{admin} kelola akan berubah dan dapat dilihat di beranda semua \textit{user}.	
-	\item Pengawas menambahkan data penilaian untuk KOPMA UNJ.
-	\item Data yang pengawas tambahkan akan muncul dan dapat dilihat di beranda  semua \textit{user}.
-	\item Pengawas mengelola (sunting dan hapus) data penilaian untuk KOPMA UNJ.
-	\item Data yang pengawas kelola akan berubah dan dapat dilihat di beranda semua \textit{user}.	
+	\item Mahasiswa
+	\begin{itemize}
+		\item Melakukan \textit{login} menggunakan akun SIAKAD.
+		\item Mengunduh RPS.
+		\item Membuat pertemuan.
+		\item Memvalidasi pertemuan.
+		\item Mengisi kehadiran pertemuan.
+		\item Memvalidasi presensi kehadiran.
+		\item Melihat data presensi kehadiran kelas.
+		\item Melihat data tugas dan perhitungan nilai.
+		\item Melihat rekap presensi.
+		\item Melihat data semester sebelumnya.
+	\end{itemize}
+	\item Dosen
+	\begin{itemize}
+		\item Melakukan \textit{login} menggunakan akun SIAKAD.
+		\item Mengolah (membuat, menyunting, menghapus) pertemuan.
+		\item Memvalidasi pertemuan.
+		\item Memvalidasi presensi kehadiran.
+		\item Mengisi perizinan mahasiswa.
+		\item Melihat data presensi kehadiran kelas.
+		\item Mengolah (membuat, menyunting, menghapus) tugas.
+		\item Mengunduh dan mengunggah excel nilai.
+		\item Memilih penanggung jawab kelas dan penanggung jawab sementara.
+		\item Mengunggah dan mengunduh RPS.
+		\item Melihat halaman monitoring untuk TPjM.
+		\item Melihat data semester sebelumnya.
+	\end{itemize}
 \end{enumerate}
 
-Fitur milik setiap \textit{user} yang akan diuji pada sistem informasi Koperasi Mahasiswa Universitas Negeri Jakarta adalah sebagai berikut:
-
-\begin{itemize}
-	\item \textit{Admin}
-	\begin{enumerate}
-		\item Masuk ke dalam sistem
-		\item Penyuntingan data pribadi
-		\item Pengelolaan anggota (tambah, kesesuaian \textit{id}, detail, pemutihan, sunting, \textit{reset password}, tambah periode, pengelompokan, pemulihan, keuangan anggota, dan cetak)
-		\item Pengelolaan barang (tambah, sunting, hapus, cetak, dan pengelompokan)
-		\item Pengelolaan stok (tambah, hapus, dan cetak)
-		\item Pengelolaan simpanan (tambah, hapus, cetak, dan pengelompokan)
-		\item Pengelolaan transaksi (tambah, hapus, dan cetak)
-		\item Transparansi penilaian
-		\item Pengelolaan dan kesesuaian arus keuangan (tambah dana tambahan dan beban lain)
-		\item Pengelolaan \textit{admin} (tambah dan hapus \textit{admin})
-		\item Pengelolaan pengawas (tambah dan hapus pengawas)
-		\item Pengelolaan penerimaan anggota (terima dan tolak anggota)
-		\item Keluar dari sistem
-	\end{enumerate}
-
-	\item Anggota
-	\begin{enumerate}
-		\item Melakukan pendaftaran
-		\item Masuk ke dalam sistem
-		\item Penyuntingan data pribadi
-		\item Transparansi data (barang, stok, transaksi, penilaian, dan arus keuangan)
-		\item Keluar dari sistem
-	\end{enumerate}
-	
-	\item Pengawas
-	\begin{enumerate}
-		\item Masuk ke dalam sistem
-		\item Penyuntingan data pribadi
-		\item Transparansi data (barang, stok, transaksi, dan arus keuangan)
-		\item Pengelolaan penilaian (tambah, sunting, hapus, dan cetak)
-		\item Keluar dari sistem
-		\end{enumerate}
-	\end{itemize}
-
-Semua fitur yang diuji memiliki penilaian yang dirincikan menjadi beberapa kategori. Data kuantitatif akan dianalisis dengan menggunakan skala \textit{ likert}. Berikut kategori dan skor penilaian dalam tahap pengujian\textit{ User Acceptance Test} pada sistem informasi Koperasi Mahasiswa Universitas Negeri Jakarta dengan menggunakan skala \textit{likert}:\\
+Pengujian yang dilakukan terdiri dari dua pengujian, yaitu pengujian fungsionalitas dan pengujian kebergunaan atau \textit{usablity}. Pada pengujian fungsional, sistem penilaian yang digunakan berdasarkan pada pilihan: \\
 
 \begin{tabular}{lll}
-SS& = Sangat Setuju& diberikan nilai 5\\
-S& = Setuju& diberikan nilai 4\\
-C& = Cukup& diberikan nilai 3\\
-TS& = Tidak Setuju& diberikan nilai 2\\
-STS& = Sangat Tidak Setuju& diberikan nilai 1\\
+S& : Setuju\\
+TS& : Tidak Setuju\\
 \\
 \end{tabular}
 
-Kemudian hasil pendataan yang telah didapatkan dengan teknik penyebaran angket dikalkulasikan dengan menggunakan sistem penilaian sebagai berikut:
+Pada pengujian kebergunaan (\textit{usability}), sistem penilaian yang digunakan adalah skala likert. Skala likert adalah skala yang terdiri dari serangkaian pernyataan yang menjelaskan sikap responden terhadap objek penelitian. Setiap pernyataan terdapat lima poin dari skala "sangat tidak setuju" hingga "sangat tidak setuju" REF LIKERT.PDF. Setelah didapatkan seluruh data penilaian dari responden, nilai tersebut dikalkulasikan sesuai sistem penilaian berikut:
 
 \begin{itemize}
-	\item Nilai total
-	
-	Nilai total merupakan nilai dari hasil perhitungan antara responden kuesioner angket dengan nilai di setiap poin pertanyaan. Berikut merupakan rumus nilai total:
-	
-	\textit{Nilai total = jumlah nilai setiap soal}
-	
-	\item Nilai rata-rata
-	
-	Nilai rata-rata merupakan nilai dari hasil perhitungan antara nilai total dengan jumlah responden yang mengisi kuesioner angket. Berikut merupakan rumus dari nilai rata-rata:
+	\item Nilai Total
 
-	\textit{Nilai rata-rata = nilai total / jumlah responden}
-	
+		Nilai total adalah jumlah keseluruhan yang didadapat dari tiap pernyataan atau dapat ditulis menjadi: \\
+		\(Nilai Total = (jumlah \times skorSS) + (jumlah \times skorS) + (jumlah \times skorC) + (jumlah \times skorTS) + (jumlah \times skorSTS)\)
+	\item Persentase Kelayakan
+
+		Persentase kelayakan adalah persentase nilai rata-rata yang didapatkan dengan cara membagi nilai total dengan skor maksimal.  Skor maksimal adalah nilai maksimal skala likert yang dikalikan dengan jumlah pernyataan. Perhitungan tersebut dapat ditulis menjadi: \\
+		\(Persentase Kelayakan(\%) = \frac{NilaiTotal}{SkorMaksimal}\times100\)
 \end{itemize}
 
-Untuk mengetahui kualitas produk yang dikembangkan layak atau tidak, maka perlu ditentukan dengan menghitung seluruh nilai rata-rata dari setiap pertanyaan. Nilai tersebut kemudian akan dibandingkan dengan interpretasi skor pada skala \textit{likert}. Analisis data yang disajikan ke distribusi skor dan persentase terhadap kategori menggunakan interpretasi skor untuk skala \textit{likert}. Berikut rentang interpretasi skor untuk skala \textit{likert}:\\
+Persentase kelayakan yang sudah didapatkan akan dibandingkan dengan skor pada skala likert untuk menarik kesimpulan akhir dari hasil pengujian. Berikut model skor skala likert:\\
 
 \begin{tabular}{lll}
-	Nilai& = 0\% - 20\%& Sangat Kurang Sesuai \\
-	Nilai& = 21\% - 40\%& Kurang Sesuai\\
-	Nilai& = 41\% - 60\%& Cukup Sesuai\\
-	Nilai& = 61\% - 80\%& Sesuai\\
-	Nilai& = 81\% - 100\%& Sangat Sesuai\\
+Sangat Kurang Sesuai& = 0\% - 20\%\\
+Kurang Sesuai& = 21\% - 40\%\\
+Cukup Sesuai& = 41\% - 60\%\\
+Sesuai& = 61\% - 80\%\\
+Sangat Sesuai& = 81\% - 100\%\\
+\\
 \end{tabular}
 
+%BARU SAMPE SINI
 \section{Hasil Uji Coba}
 Berdasarkan hasil uji coba \textit{User Acceptance Test} yang dilakukan terhadap 30 anggota KOPMA UNJ, yakni \textit{admin} yang terdiri dari 2 responden, pengawas terdiri dari 3 responden, dan anggota terdiri dari 25 responden, diperoleh hasil uji coba sebagai berikut:
 

@@ -28,7 +28,9 @@ Pada tahapan ini, penulis mengumpulkan informasi tentang kebutuhan dari perangka
 	\item Dosen dapat melihat kelas-kelas yang diampu, mengisi form 05 untuk pertemuan pada kelas tersebut, dan dapat menutup waktu presensi untuk mahasiswa. Untuk memvalidasi presensi dari mahasiswa Dosen dapat memilih untuk memvalidasi semua presensi yang masuk, melakukan seleksi validasi presensi yang sudah masuk, atau memvalidasi semua presensi yang masuk sebelum waktu yang ditentukan.  Dosen juga dapat menambahkan tugas dan mengisi nilai tugas setiap mahasiswa dengan mengunduh format excel yang telah tersedia dan mengunggah \textit{file excel} tersebut ketika ada pembaruan. Ketika penanggung jawab mata kuliah tidak bisa hadir, dosen juga dapat menunjuk penanggung jawab mata kuliah sementara untuk pertemuan tersebut.
 	\item Tim penjamin mutu adalah bagian dari dosen dengan tambahan yaitu memiliki menu monitoring yang berisi informasi semua kelas-kelas pada program studi termasuk yang tidak diampu oleh dosen tersebut. Tim penjamin mutu hanya dapat melihat form 05 dan form 06 tanpa bisa merubah data di dalamnya.
 	\item Admin hanya memiliki satu tugas yaitu untuk mengatur atau mengubah jenis user dosen atau tim penjamin mutu jika ada perubahan.
+	\item Dosen baru bisa mengadakan UAS setelah mengadakan paling sedikit 12 pertemuan. Mahasiswa yang tidak menghadiri kelas lebih dari tiga kali tidak bisa mendapatkan nilai UAS.
 	\item Satu kelas bisa diampu lebih dari satu dosen.
+	\item User dapat melihat data kelas semester sebelumnya.
 	
 \end{enumerate}
 
@@ -38,16 +40,18 @@ Pada tahapan ini, penulis mengumpulkan informasi tentang kebutuhan dari perangka
 
 Pada penelitian ini, penulis mengembangkan perangkat lunak dengan menggunakan proses model Spiral dimana pengembangan dilakukan dalam \emph{cycle} atau iterasi. Dari hasil analisis kebutuhan yang telah dilakukan, penulis mengambil beberapa diantaranya untuk dikembangkan dalam iterasi pertama. Total iterasi yang direncanakan adalah tiga iterasi dengan periode waktu satu hingga dua minggu per iterasi. Berikut adalah fase-fase yang penulis jalankan dalam iterasi pertama.
 
-\section{Perencanaan}
+\subsection{Spiral 1}  %SPIRAL 1
+
+\subsubsection{Perencanaan}
 
 Dalam tahap perencanaan, penulis membuat desain-desain dari beberapa kebutuhan yang telah didapatkan dalam bentuk \textit{Use Case Diagram}, \textit{Activity Diagram}, dan rancangan tampilan antarmuka untuk menjadi tujuan yang akan dikembangkan dalam iterasi yang dijalankan. Selain itu, dalam iterasi pertama penulis juga membuat desain rancangan sistem secara keseluruhan dalam bentuk \textit{Entity Relation Diagram}. Iterasi ini berjalan selama dua minggu.
 
 %gambar use case
-\subsection{Use Case Diagram}
+\textbf{A. \textit{Use Case Diagram}}
 
 Pada iterasi pertama, penulis mengembangkan sistem dari sisi mahasiswa terlebih dahulu dikarenakan penulis dapat mengakses \textit{web service} SIAKAD dengan akun mahasiswa penulis. Berikut adalah use case diagram yang telah dibuat:
 
-\begin{figure}[H]
+\begin{figure}[h!]
 	\centering
 	\includegraphics[width=0.8\textwidth]{gambar/diagram/Use Case Iteration 1}
 	\caption{Desain \textit{Use Case Diagram Iterasi Pertama}}
@@ -57,7 +61,7 @@ Pada iterasi pertama, penulis mengembangkan sistem dari sisi mahasiswa terlebih 
 Aktor Mahasiswa dapat melihat detail kelas-kelas yang diambil seperti presensi dan nilai setiap mahasiswa pada kelas tersebut dan mengisi presensi pertemuan yang sedang berlangsung.
 Aktor Penanggung Jawab Mata Kuliah dapat digeneralisasi menjadi aktor Mahasiswa sehingga mendapat wewenang yang sama seperti aktor Mahasiswa. Aktor penanggung jawab mata kuliah juga dapat mengisi form 05 atau memvalidasi form 05 yang telah dibuat oleh dosen dan memvalidasi presensi form 06 mahasiswa lain.
 
-\subsection{Activity Diagram}
+\textbf{B. \textit{Activity Diagram}}
 
 Dari beberapa \textit{use case} yang telah dibuat, penulis juga membuat \textit{activity diagram} untuk beberapa \textit{use case} yang butuh penjelasan alur untuk menjalankannya. Berikut adalah \textit{activity diagram} yang telah dibuat:
 
@@ -78,7 +82,7 @@ Dari beberapa \textit{use case} yang telah dibuat, penulis juga membuat \textit{
 Pada gambar \ref{fig:activity2} menggambarkan aktivitas mengisi form 05 yang dapat dilakukan oleh penanggung jawab mata kuliah dan dosen. Pada pengisiannya, penanggung jawab mata kuliah dapat mengosongkan terlebih dahulu materi pembelajaran untuk nantinya ditambahkan oleh dosen.
 Pada gambar \ref{fig:activity1} menggambarkan aktivitas mengisi presensi yang dapat dilakukan oleh setiap mahasiswa dan memvalidasi form 05 yang dapat dilakukan oleh penanggung jawab dan dosen.
 
-\subsection{Rancangan Tampilan Antarmuka}
+\textbf{C. Rancangan Tampilan Antarmuka}
 
 Pada rancangan tampilan antar muka program, penulis membuat desain awal dengan menggunakan \textit{tools online}. Pada halaman \textit{login} yang dapat dilihat pada gambar \ref{fig:login}, user mengisi email dan \textit{password} yang terdaftar pada \textit{web service} SIAKAD.
 
@@ -98,9 +102,6 @@ Setelah \textit{user} berhasil melakukan \textit{login}, \textit{user} akan diba
 	\label{fig:dashboard}
 \end{figure}
 
-
-Menu Daftar Kelas merupakan menu yang digunakan untuk membuka halaman kelas yang diambil. Halaman Daftar Kelas dapat dilihat pada gambar \ref{fig:daftarkelas}. Menu kelas terdapat empat bagian \textit{tab} di dalamnya, yaitu Pertemuan, Presensi, Tugas, dan Nilai. Pada \textit{tab} pertemuan yang dapat dilihat pada gambar \ref{fig:form05pj} penanggung jawab dan dosen dapat menambah pertemuan, memvalidasi form yang dibuat oleh penanggung jawab, memvalidasi presensi mahasiswa, dan mengisi pokok bahasan yang dibahas pada pertemuan tersebut. Setelah pertemuan sudah dibuat dan mahasiswa sudah mengisi presensi, dosen juga bisa memvalidasi presensi mahasiswa tersebut. Pada \textit{tab} ini mahasiswa dapat memilih Hadir untuk mengisi presensi pada pertemuan tersebut yang bisa dilihat pada gambar \ref{fig:form05mhs}. Penanggung jawab mata kuliah memiliki fungsi yang sama dengan mahasiswa dan dosen.
-
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=0.8\textwidth]{gambar/mockup/daftar_kelas}
@@ -108,22 +109,27 @@ Menu Daftar Kelas merupakan menu yang digunakan untuk membuka halaman kelas yang
 	\label{fig:daftarkelas}
 \end{figure}
 
+Menu Daftar Kelas merupakan menu yang digunakan untuk membuka halaman kelas yang diambil. Halaman Daftar Kelas dapat dilihat pada gambar \ref{fig:daftarkelas}. Menu kelas terdapat empat bagian \textit{tab} di dalamnya, yaitu Pertemuan, Presensi, Tugas, dan Nilai. Pada \textit{tab} pertemuan yang dapat dilihat pada gambar \ref{fig:form05pj} penanggung jawab dan dosen dapat menambah pertemuan, memvalidasi form yang dibuat oleh penanggung jawab, memvalidasi presensi mahasiswa, dan mengisi pokok bahasan yang dibahas pada pertemuan tersebut. Setelah pertemuan sudah dibuat dan mahasiswa sudah mengisi presensi, dosen juga bisa memvalidasi presensi mahasiswa tersebut. Pada \textit{tab} ini mahasiswa dapat memilih Hadir untuk mengisi presensi pada pertemuan tersebut yang bisa dilihat pada gambar \ref{fig:form05mhs}. Penanggung jawab mata kuliah memiliki fungsi yang sama dengan mahasiswa dan dosen.
+
+
+
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.8\textwidth]{gambar/mockup/form05_pj}
+	\includegraphics[width=1\textwidth]{gambar/mockup/form05_pj}
 	\caption{Desain Halaman Form 05 Pada Penanggung Jawab}
 	\label{fig:form05pj}
 \end{figure}
 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.8\textwidth]{gambar/mockup/form05_mahasiswa}
-	\caption{Desain Halaman Form 05 Pada Mahasiswa }
+	\includegraphics[width=1\textwidth]{gambar/mockup/form05_dosen}
+	\caption{Desain Halaman Form 05 Pada Dosen }
 	\label{fig:form05mhs}
 \end{figure}
 
 
-\subsection{\textit{Class Diagram}}
+\textbf{D. \textit{Class Diagram}}
+
 	Desain \textit{Class Diagram} pada sistem yang dibuat digambarkan dengan mengikuti konsep MVC dimana \textit{class} pada desain dibagi menjadi tiga jenis yaitu \textit{model}, \textit{view}, \textit{controller}. Pada penggunaannya \textit{class} \textit{model} dan \textit{controller} dibuat pada bagian \textit{backend} dengan menggunakan Laravel sedangkan \textit{class view} dibuat pada bagian \textit{frontend} dengan menggunakan \textit{Vue}. Pada diagram berikut ketiga jenis \textit{class} dibedakan dengan menggunakan warna yang berbeda yaitu biru untuk \textit{model}, hijau untuk \textit{view}, dan merah untuk \textit{controller}. Desain \textit{class diagram} pada sistem dapat dilihat pada gambar \ref{fig:classdiagram}
 
 \begin{figure}[H]
@@ -134,7 +140,8 @@ Menu Daftar Kelas merupakan menu yang digunakan untuk membuka halaman kelas yang
 \end{figure}
 
 
-\subsection{\textit{Entity Relationship Diagram}}
+\textbf{E. \textit{Entity Relationship Diagram}}
+
 	Desain \textit{Entity Relationship Diagram} pada sistem ini dibuat menggambarkan setiap entitas yang digunakan dalam sistem dan relasinya pada \textit{database} dan pada \textit{web service} SIAKAD yang digunakan. Pada ERD tersebut terdapat sebelas entitas dimana enam diantaranya didapatkan dari \textit{web service} dan lima lainnya berada pada \textit{database} sistem ini sendiri. Entitas yang dibuat dan disimpan pada \textit{database} adalah entitas MahasiswaKelas. Absen, Pertemuan, Nilai, dan Tugas. Entitas MahasiswaKelas merupakan \textit{pivot} antara relasi mahasiswa dan kelas yang disimpan karena menyimpan informasi tambahan selain yang didapatkan dari \textit{webservice} yaitu nilai dan \textit{role} penanggung jawab. Entitas Pertemuan dan Absen yang menghubungkan antara mahasiswa dan kelas merupakan entitas yang menggambarkan form 05 dan 06. Desain ERD pada sistem dapat dilihat pada gambar \ref{fig:erd}
 
 \begin{figure}[h!]
@@ -144,7 +151,7 @@ Menu Daftar Kelas merupakan menu yang digunakan untuk membuka halaman kelas yang
 	\label{fig:erd}
 \end{figure}
 
-\section{Analisis Risiko}
+\subsubsection{Analisis Risiko}
 	Pada fase selanjutnya, penulis melakukan analisis risiko yang dapat terjadi pada pengembangan perangkat lunak, dan mencoba mencari solusi yang dapat dilakukan untuk menangani risiko tersebut. Risiko-risiko yang telah teridentifikasi adalah sebagai berikut:
 \begin{enumerate}
 	\item Penulis tidak memiliki akses \textit{web service} SIAKAD sebagai dosen. 
@@ -158,15 +165,171 @@ Setelah risiko yang mungkin terjadi teridentifikasi, penulis mendapat beberapa s
 	\item Membuat list kebutuhan \textit{web service} dan berkomunikasi dengan pihak UPT TIK terkait \textit{web service} yang dibutuhkan.
 \end{enumerate}
 
-\section{Pengembangan}
+\subsubsection{Pengembangan}
 	Pada fase pengembangan, penulis melakukan proses pengkodean sekaligus pengujian fitur yang dikembangkan. Hasil dari fase ini adalah perangkat lunak sesuai dengan tujuan yang telah ditentukan. Sebagai fase pertama penulis mulai dengan membuat basis data yang dibutuhkan, lalu membuat \textit{backend} beserta hubungannya dengan \textit{web service} SIAKAD, dan membuat \textit{frontend} atau tampilan.
 
-\section{Evaluasi}
+\subsubsection{Evaluasi}
 	Pada fase evaluasi, penulis melakukan \textit{review} atas iterasi yang telah dilakukan dan merencanakan iterasi yang selanjutnya. Untuk iterasi selanjutnya penulis akan mempersingkat waktu iterasi dengan menyelesaikan iterasi tanpa menunggu berakhirnya minggu kedua ketika semua tujuan iterasi sudah tercapai. Pada iterasi selanjutnya penulis akan mengembangkan sisi dosen dan menyempurnakan sisi mahasiswa yang telah dibuat.
 
+\subsection{Spiral 2}		%SPIRAL 2
+\subsubsection{Perencanaan}
+	Dalam tahap perencanaan spiral 2, penulis kembali membuat desain Use Case Diagram, Activity Diagram, dan rancangan tampilan antar muka yang akan menjadi tujuan pengembangan pada iterasi kedua. Pada spiral 2, penulis membuat halaman presensi, tugas, dan nilai untuk dosen. Fungsionalitas yang dibuat adalah memilih penanggung jawab, membuat tugas, menggunggah nilai, dan memvalidasi presensi kehadiran.  
+
+\textbf{A. \textit{Use Case Diagram}}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{gambar/diagram/Use Case Iteration 2}
+	\caption{Desain \textit{Use Case Diagram Iterasi Kedua}}
+	\label{fig:usecase2nd}
+\end{figure}
+
+	Pada Spiral 2, penambahan fitur dapat digambarkan dengan Use Case Diagram pada gambar \ref{fig:usecase2nd}. Pada iterasi ini, pengembangan fitur berfokus kepada fungsionalitas pada \textit{user} Dosen seperti memilih penanggung jawab, membuat tugas, dan mengunggah nilai yang hanya dapat dilakukan oleh dosen dan memvalidasi presensi kehadiran yang dapat dilakukan oleh dosen dan penanggung jawab.
 
 
 
+\textbf{B. \textit{Activity Diagram}}
+
+	Dari beberapa Use Case yang telah dibuat, penulis juga membuat Activty Diagram untuk memperjelas alur cara kerja fitur yang dibuat. Activity Diagram yang dibuat pada iterasi ini dapat dilihat pada gambar \ref{fig:actvalidasipresensi} dan gambar \ref{fig:acttugasnilai}
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{gambar/diagram/Memvalidasi presensi}
+	\caption{Desain \textit{Activity Diagram Memvalidasi Presensi}}
+	\label{fig:actvalidasipresensi}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{gambar/diagram/Membuat tugas dan Mengunggah Nilai}
+	\caption{Desain \textit{Activity Diagram Membuat tugas dan Mengunggah Nilai}}
+	\label{fig:acttugasnilai}
+\end{figure}
+
+
+\textbf{C. Rancangan Tampilan Antar Muka}
+
+	Pada Spiral 2, penulis juga membuat desain tampilan antar muka yang akan dibuat yaitu rancangan tampilan halaman Presensi, Tugas, dan Nilai. Pada gambar \ref{fig:mockpresensi} dapat dilihat desain tampilan halaman presensi dimana pengguna dapat melihat daftar mahasiswa yang mengikuti kelas dan presensi pada setiap pertemuannya. Pada gambar \ref{fig:mocktugas} dapat dilihat desain tampilan halaman tugas dimana dosen dapat membuat, menyunting, atau menghapus tugas. Pada tabel tugas, terdapat nama tugas, tanggal,  bobot, dan tipe. Bobot adalah bobot nilai tugas dalam persen sedangkan tipe adalah tipe tugas yang dapat berupa Tugas, UTS, atau UAS. Pada gambar \ref{fig:mocknilai} adalah desain tampilan halaman nilai yang hanya dapat dilihat oleh dosen. Pada tampilan ini dosen dapat mengunduh excel nilai untuk mulai mengisi nilai, setelah file excel sudah diisi dengan nilai, file tersebut dapat diunggah kembali untuk memasukkan nilai ke dalam sistem.
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=1\textwidth]{gambar/mockup/form06_presensi}
+	\caption{Desain Tampilan Halaman Presensi}
+	\label{fig:mockpresensi}
+\end{figure}
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=1\textwidth]{gambar/mockup/tugas_dosen}
+	\caption{Desain Tampilan Halaman Tugas Pada Dosen}
+	\label{fig:mocktugas}
+\end{figure}
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=1\textwidth]{gambar/mockup/nilai_dosen}
+	\caption{Desain Tampilan Halaman Nilai Pada Dosen}
+	\label{fig:mocknilai}
+\end{figure}
+
+\subsubsection{Analisis Risiko}
+	Pada spiral 2, risiko yang didapati penulis ada pada membuat tampilan dan flow yang sesuai dan dapat memberikan User Experience yang terbaik.
+\subsubsection{Pengembangan}
+	Pada fase pengembangan, penulis melakukan proses pengembangan fitur-fitur yang telah direncanakan. Pada pengembangan spiral 2, penulis membuat tampilan halaman-halaman presensi, tugas, dan nilai pada \textit{frontend} dan membuat \textit{model} dan\textit{controller} pada \textit{backend}.
+\subsubsection{Evaluasi}
+	Pada fase evaluasi, penulis kembali melakukan pengujian kembali fitur yang telah dibuat dan melakukan \textit{review} pada kode yang telah dibuat untuk mencari cara implementasi yang lebih baik. Pada iterasi selanjutnya penulis akan melanjutkan pengembangan dan memperbaiki fitur penanggung jawab pengganti menjadi khusus pada satu pertemuan saja.
+
+\subsection{Spiral 3}		%SPIRAL 3
+\subsubsection{Perencanaan}
+	Pada spiral 3, penulis merencanakan untuk memperbaiki fitur yang telah dievaluasi pada spiral sebelumnya dan menambahkan fitur-fitur baru yaitu menampilkan halaman monitoring untuk TPjM yang menampilkan data-data kelas yang ada dalam satu program studi, fitur unggah dan unduh RPS, rekap presensi mahasiswa, dan halaman admin untuk mengatur role TPjM.
+
+\textbf{A. \textit{Use Case Diagram}}
+
+	Pada Spiral 3, penambahan fitur dapat digambarkan dengan Use Case Diagram pada gambar \ref{fig:usecase3rd}. Pada iterasi ini, dilakukan pengembangan fitur pada beberapa aktor, pada mahasiswa ada penambahan rekap presensi dan mengunduh RPS, pada dosen terdapat penambahan mengunggah dan mengunduh RPS. Selain itu ditambahkan tampilan monitoring TPjM yang berupa daftar kelas dalam satu program studi yang merupakan \textit{homebase} dosen yang bersangkutan. Pada iterasi ini ditambahkan juga aktor baru yaitu admin yang memiliki fungsi untuk mengubah role TPjM.
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.8\textwidth]{gambar/diagram/Use Case Iteration 3}
+	\caption{Desain \textit{Use Case Diagram Iterasi Ketiga}}
+	\label{fig:usecase3rd}
+\end{figure}
+
+\textbf{B. \textit{Activity Diagram}}
+
+	Pada spiral 3, penulis membuat Activity Diagram untuk membantu menjelaskan interaksi yang terjadi pada Use Case. Activity Diagram yang dibuat pada iterasi ini dapat dilihat pada gambar \ref{fig:actadmin}.
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.8\textwidth]{gambar/diagram/Admin Assign Role}
+	\caption{Desain \textit{Activity Diagram Admin Assign Role}}
+	\label{fig:actadmin}
+\end{figure}
+
+\textbf{C. Rancangan Tampilan Antar Muka}
+
+	Pada Spiral 2, penulis membuat desain tampilan antar muka yang akan dibuat yaitu rancangan tampilan halaman admin, rekap presensi, dan halaman monitoring. Pada gambar \ref{fig:mockadmin} dapat dilihat desain tampilan halaman dimana admin dapat mengganti role dosen menjadi TPjM atau sebaliknya. Pada gambar \ref{fig:mockrekappresensi} dapat dilihat desain tampilan halaman rekap presensi mahasiswa. Pada gambar \ref{fig:mockmonitoring} dapat dilihat tampilan halaman monitoring dimana TPjM dapat melihat daftar kelas pada program studi \textit{homebase}nya.
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=1\textwidth]{gambar/mockup/admin_dosen}
+	\caption{Desain Tampilan Halaman Admin Assign Role}
+	\label{fig:mockadmin}
+\end{figure}
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=1\textwidth]{gambar/mockup/rekap_presensi}
+	\caption{Desain Tampilan Halaman Rekap Presensi}
+	\label{fig:mockrekappresensi}
+\end{figure}
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=1\textwidth]{gambar/mockup/monitoring}
+	\caption{Desain Tampilan Halaman Monitoring}
+	\label{fig:mockmonitoring}
+\end{figure}
+
+\subsubsection{Analisis Risiko}
+	Pada fase ini, penulis mendapatkan hasil analisis yaitu dibutuhkan API Siakad tambahan untuk mengambil data semua kelas pada satu program studi dan membuat tampilan kelas tanpa adanya action apa-apa untuk tampilan monitoring TPjM.
+\subsubsection{Pengembangan}
+	Pada pengembangan spiral 3, penulis membuat tampilan daftar kelas monitoring TPjM dan rekap presensi dan pada backend penulis membuat import export excel untuk mengunduh dan mengunggah nilai.
+\subsubsection{Evaluasi}
+	Pada evaluasi spiral 3, penulis memutuskan untuk menambah iterasi tambahan untuk memperbaiki detil-detil fitur dan tampilan yang sudah ada dan beberapa perubahan desain dan kebutuhan.
+
+\subsection{Spiral 4}		%SPIRAL 4
+\subsubsection{Perencanaan}
+	Pada fase perencanaan kali ini, penulis mendapatkan kebutuhan sistem baru yaitu menerapkan aturan akademik dimana mahasiswa yang tidak menghadiri kelas lebih dari tiga kali tidak bisa mendapatkan nilai UAS, perizinan mahasiswa, mengubah bobot tugas sekaligus pada halaman nilai untuk mempermudah dosen, dan kebutuhan untuk melihat data pada semester sebelumnya. Selain itu penulis juga memperbaiki beberapa detil tampilan dan fitur-fitur lainnya.
+
+\textbf{A. \textit{Use Case Diagram}}
+
+	Pada spiral 4, penambahan pada Use Case dapat dilihat pada gambar \ref{fig:usecase4th}. Pada gambar tersebut dapat dilihat penambahan Use Case pada aktor dosen dan mahasiswa. 
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.8\textwidth]{gambar/diagram/Use Case Iteration 4}
+	\caption{Desain \textit{Use Case Diagram Iterasi Pertama}}
+	\label{fig:usecase4th}
+\end{figure}
+
+\textbf{B. \textit{Activity Diagram}}
+
+	Pada spiral 3, penulis membuat Activity Diagram untuk membantu menjelaskan interaksi yang terjadi pada Use Case. Activity Diagram yang dibuat pada iterasi ini dapat dilihat pada gambar \ref{fig:actperizinan}.
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.8\textwidth]{gambar/diagram/perizinan}
+	\caption{Desain \textit{Activity Diagram} Perizinan}
+	\label{fig:actperizinan}
+\end{figure}
+
+\subsubsection{Analisis Risiko}
+	Pada spiral 4, dikarenakan adanya kebutuhan baru untuk dapat melihat data semester sebelumnya, penulis harus melakukan perubahan pada code yang sudah ada yang sebelumnya hanya memberikan data dengan semester aktif.
+\subsubsection{Pengembangan}
+	Pada pengembangan spipral 4, penulis membuat perubahan pada backend untuk menambah aturan pada unggah nilai UAS sesuai dengan kehadiran mahasiswa dan pembuatan UAS yang dapat dilakukan setelah ada 12 pertemuan. Penulis juga menambahkan pemilihan semester pada rekap presensi, daftar kelas, dan monitoring untuk melihat data pada semester sebelumnya. 
+\subsubsection{Evaluasi}
+	Pada evaluasi spiral terakhir, penulis melakukan \textit{review} pada fitur-fitur yang sudah ada dan memastikan bahwa semuanya sudah berjalan dengan baik dan sesuai kebutuhan.
 
 
 
@@ -305,7 +468,7 @@ Pada menu Rekap Presensi yang dapat dilihat pada gambar \ref{fig:rekap}, mahasis
 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.8\textwidth]{gambar/mockup/rekap_presensi}
+	\includegraphics[width=1\textwidth]{gambar/mockup/rekap_presensi}
 	\caption{Desain Halaman Rekap Presensi}
 	\label{fig:rekap}
 \end{figure}
@@ -335,7 +498,7 @@ Menu Daftar Kelas merupakan menu yang digunakan untuk membuka halaman kelas yang
 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.8\textwidth]{gambar/mockup/form05_mahasiswa}
+	\includegraphics[width=1\textwidth]{gambar/mockup/form05_mahasiswa}
 	\caption{Desain Halaman Form 05 Pada Mahasiswa }
 	\label{fig:form05mhs}
 \end{figure}
@@ -346,7 +509,7 @@ Pada \textit{tab} presensi yang dapat dilihat pada gambar \ref{fig:presensi}, si
 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.8\textwidth]{gambar/mockup/form06_presensi}
+	\includegraphics[width=1\textwidth]{gambar/mockup/form06_presensi}
 	\caption{Desain Halaman Presensi}
 	\label{fig:presensi}
 \end{figure}
@@ -355,14 +518,14 @@ Pada \textit{tab} tugas yang dapat dilihat pada gambar \ref{fig:tugas}, dosen da
 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.8\textwidth]{gambar/mockup/tugas}
+	\includegraphics[width=1\textwidth]{gambar/mockup/tugas}
 	\caption{Desain Halaman Tugas Pada Dosen}
 	\label{fig:tugas}
 \end{figure}
 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.8\textwidth]{gambar/mockup/tugas_mahasiswa}
+	\includegraphics[width=1\textwidth]{gambar/mockup/tugas_mahasiswa}
 	\caption{Desain Halaman Tugas Pada Mahasiswa}
 	\label{fig:tugasmhs}
 \end{figure}
