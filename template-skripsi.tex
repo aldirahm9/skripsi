@@ -37,6 +37,9 @@
 \setlength\bibhang{12mm}
 
 \usepackage{tabularx}
+\usepackage{longtable}
+
+\usepackage{listings}
 
 
 %-----------------------------------------------------------------
@@ -53,7 +56,7 @@
 
 \degree{Sarjana Ilmu Komputer}
 
-\yearsubmit{2021}
+\yearsubmit{2022}
 
 \program{Ilmu Komputer}
 
@@ -107,7 +110,14 @@ con-trol-ler
 me-nun-juk-kan
 peng-ak-ses-an
 RESTful
+front-end
 di-pro-ses
+di-da-pat-kan
+ber-ja-lan
+men-je-las-kan
+SIAKAD
+di-tam-bah-kan
+ha-la-man
 }
 
 %-----------------------------------------------------------------
@@ -120,33 +130,34 @@ di-pro-ses
 
 \include{pengesahan}
 %\include{persetujuan}
-%\include{orisinalitas}
+\include{orisinalitas}
 
 %-----------------------------------------------------------------
 %Disini awal masukan Acknowledment
 %-----------------------------------------------------------------
-%\acknowledgment
-%\begin{flushright}
-%	\emph{Untuk Bapak dan Mama.}
-%\end{flushright}
+\acknowledgment
+\begin{flushright}
+	\emph{Untuk Alm. Ayah, Ibu,} \\
+	\emph{Kakak, dan Aku}
+\end{flushright}
 %-----------------------------------------------------------------
 %Disini awal masukan untuk Prakata
 %-----------------------------------------------------------------
 
 \preface
 \begin{onehalfspace}
-Puji dan syukur penulis panjatkan kepada Allah SWT atas segala rahmat, berkah dan hidayah-Nya sehingga penulis dapat menyelesaikan proposal skripsi yang berjudul "Rancang Bangun Sistem Informasi Monitoring Kegiatan Belajar Mengajar Menggunakan \textit{Web Service} Di Rumpun Matematika FMIPA UNJ" dengan baik. Proposal skripsi ini dibuat dengan tujuan untuk memenuhi salah satu syarat memperoleh gelar Sarjana Komputer.  
+Puji dan syukur penulis panjatkan kepada Allah SWT atas segala rahmat, berkah dan hidayah-Nya sehingga penulis dapat menyelesaikan skripsi yang berjudul "Rancang Bangun Sistem Informasi Monitoring Kegiatan Belajar Mengajar Menggunakan \textit{Web Service} Di Rumpun Matematika FMIPA UNJ" dengan baik. Skripsi ini dibuat dengan tujuan untuk memenuhi salah satu syarat memperoleh gelar Sarjana Komputer.  
 
-Dalam proses pembuatan proposal skripsi ini, penulis mendapat banyak bantuan dan dorongan. Oleh karena itu, penulis ingin menyampaikan rasa terima kasih kepada Bapak Med Irzal, M.Kom selaku Dosen Pembimbing I dan Ibu Ir. Fariani Hermin Indiyah, M.T selaku Dosen Pembimbing II yang telah membimbing, mengarahkan, mengoreksi, serta memberikan berbagai saran dan masukan yang sangat bermanfaat dalam penyusunan proposal skripsi ini.
+Dalam proses pembuatan skripsi ini, penulis mendapat banyak bantuan dan dorongan. Oleh karena itu, penulis ingin menyampaikan rasa terima kasih kepada Bapak Med Irzal, M.Kom selaku Dosen Pembimbing I dan Ibu Ir. Fariani Hermin Indiyah, M.T selaku Dosen Pembimbing II yang telah membimbing, mengarahkan, mengoreksi, serta memberikan berbagai saran dan masukan yang sangat bermanfaat dalam penyusunan skripsi ini.
 
-Dalam penyusunan proposal skripsi ini, penulis menyadari bahwa proposal skripsi yang telah dibuat ini masih sangat jauh dari kata sempurna dengan segala keterbatasan ilmu dan pengetahuan penulis sendiri. Baik dari segi penulisan, materi, dan bahasa. Oleh karena itu, penulis sangat membutuhkan kritik dan saran untuk dijadikan sebagai pembelajaran dan untuk membantu penulis menjadi lebih baik lagi kedepannya.
+Dalam penyusunan skripsi ini, penulis menyadari bahwa skripsi yang telah dibuat ini masih sangat jauh dari kata sempurna dengan segala keterbatasan ilmu dan pengetahuan penulis sendiri. Baik dari segi penulisan, materi, dan bahasa. Oleh karena itu, penulis sangat membutuhkan kritik dan saran untuk dijadikan sebagai pembelajaran dan untuk membantu penulis menjadi lebih baik lagi kedepannya.
 
-Akhir kata, penulis berharap agar proposal yang telah dibuat ini dapat memberikan manfaat kepada semua pihak, khususnya penulis sendiri. Penulis juga berharap ditulisnya proposal skripsi ini dapat menjadi motivasi dan memberikan semangat bagi rekan-rekan yang sedang dan akan menyusun proposal skripsi. Semoga Allah SWT senantiasa membalas kebaikan semua pihak yang telah membantu penulis dalam menyusun proposal skripsi ini.
+Akhir kata, penulis berharap agar skripsi yang telah dibuat ini dapat memberikan manfaat kepada semua pihak, khususnya penulis sendiri. Penulis juga berharap ditulisnya skripsi ini dapat menjadi motivasi dan memberikan semangat bagi rekan-rekan yang sedang dan akan menyusun skripsi. Semoga Allah SWT senantiasa membalas kebaikan semua pihak yang telah membantu penulis dalam menyusun skripsi ini.
 \end{onehalfspace}
 \vspace{.5cm}
 
 \begin{tabular}{p{7.5cm}c}
-	&Jakarta, 2 Juni 2021\\
+	&Jakarta, 1 Februari 2022\\
 	&\\
 	&\\
 	&\\
@@ -158,28 +169,28 @@ Akhir kata, penulis berharap agar proposal yang telah dibuat ini dapat memberika
 %-----------------------------------------------------------------
 %Disini awal masukan Intisari
 %-----------------------------------------------------------------
-%\begin{abstractind}
-%\textbf{MUHAMMAD YAN HANDOKO}. 	\textbf{Perancangan Sistem Informasi Koperasi Serba Usaha Berbasis \emph{Website} Pada Lembaga Koperasi Mahasiswa Universitas Negeri Jakarta}. Skripsi. Fakultas Matematika dan Ilmu Pengetahuan Alam, Universitas Negeri Jakarta. 2019. Di bawah bimbingan Ratna Widyati, S.Si, M.Kom dan Drs. Mulyono, M.Kom.
-%\vskip1cm
+\begin{abstractind}
+\textbf{ALDI RAHMANSYAH}. 	\textbf{Rancang Bangun Sistem Informasi Monitoring Kegiatan Belajar Mengajar menggunakan \emph{Web Service} SIAKAD Di Rumpun Matematika FMIPA UNJ}. Skripsi. Fakultas Matematika dan Ilmu Pengetahuan Alam, Universitas Negeri Jakarta. 2022. Di bawah bimbingan Med Irzal, M.Kom dan Ir. Fariani Hermin Indiyah, M.T.
+\vskip1cm
 	
-%Koperasi Mahasiswa Universitas Negeri Jakarta (KOPMA UNJ) merupakan organisasi kemahasiswaan tingkat universitas yang bergerak dalam bidang perkoperasian. KOPMA UNJ merupakan koperasi serba usaha, yang tujuan utamanya adalah menyejahterakan anggota koperasi. Aspek perkoperasian yang dijalankan KOPMA UNJ adalah simpanan dan usaha. Pada prosesnya, pengelolaan dana simpanan akan digunakan untuk pembelian barang usaha yang pada akhirnya akan menghasilkan keuntungan untuk anggota yang disebut sisa hasil usaha (shu). Skripsi ini bertujuan untuk membangun sistem informasi KOPMA UNJ berbasis \textit{website} agar memudahkan pengurus KOPMA UNJ dalam mengelola dana simpanan dan usaha koperasi, serta agar anggota KOPMA UNJ dapat mengetahui transparansi dana simpanan yang mereka bayarkan kapanpun dan dimanapun. Sistem informasi KOPMA UNJ berbasis \textit{website} dikembangkan menggunakan metode pengembangan perangkat lunak (\textit{system development life cycle}) model \textit{spiral}. Model \textit{spiral} memiliki 4 tahapan pengembangan, yaitu analisis kebutuhan, desain sistem, implementasi, dan \textit{maintenance}. Sistem informasi KOPMA UNJ dibangun menggunakan \textit{framework codeigniter} untuk bagian \textit{back-end} dan \textit{framework bootstrap} untuk tampilan \textit{user} \textit{front-end}. \textit{User} yang ada pada sistem informasi KOPMA UNJ berjumlah 3, yaitu \textit{admin} yang dapat mengelola seluruh data simpanan dan usaha, anggota yang dapat mengetahui transparansi seluruh data, dan pengawas yang dapat mengelola data penilaian.
+Kegiatan belajar Mengajar adalah suatu kegiatan yang merupakan bagian dari salah satu isi Tri Dharma Peguruan Tinggi. Dalam melaksanakan kegiatan belajar mengajar perlu dilakukan pemantauan dan evaluasi untuk memastikan pelaksanaan kegiatan belajar mengajar mencapai tujuan yang diinginkan dan sesuai dengan standar yang ditetapkan. Pemantauan dan evaluasi kegiatan belajar mengajar dilakukan melalui formulir 05 dan 06 oleh Tim Penjamin Mutu tingkat program studi. Skripsi ini bertujuan untuk membangun sebuah sistem informasi monitoring kegiatan belajar mengajar yang dapat membantu proses monitoring dan kegiatan belajar mengajar itu sendiri. Sistem informasi ini dibangun menggunakan metode pengembangan perangkat lunak atau SDLC dengan model Spiral. Teknologi yang digunakan untuk membangun sistem informasi ini adalah Laravel untuk \textit{backend} dan Vue untuk \textit{frontend}. Pada akhir pengembangan dilakukan pengujian UAT (\textit{User Acceptance Test}) pada sisi fungsional dan kebergunaannya. Dari hasil pengujian yang telah dilakukan dapat dikatakan bahwa Sistem Informasi Monitoring Kegiatan Belajar Mengajar yang telah dibuat dapat berjalan dengan baik dan sesuai dengan yang diharapkan dengan tingkat kebergunaan sebesar 91.8\% pada keseluruhan sistem.
 	
-%	\bigskip
-%	\noindent
-%	\textbf{Kata kunci :} \textit{Webite}, sistem informasi, model \textit{spiral}, \textit{framework codeigniter}, \textit{framework bootstrap}, koperasi, simpanan, usaha.
-%\end{abstractind}
+	\bigskip
+	\noindent
+	\textbf{Kata kunci :} \textit{Webite}, sistem informasi, model \textit{spiral}, \textit{laravel}, \textit{vue}, monitoring, kegiatan belajar mengajar.
+\end{abstractind}
 
-%\begin{abstracteng}
+\begin{abstracteng}
 
-%\textbf {MUHAMMAD YAN HANDOKO}. \textbf {Designing a Website-Based Multipurpose Cooperative Information System at the Koperasi Mahasiswa Universitas Negeri Jakarta}. Thesis. Faculty of Mathematics and Natural Sciences, State University of Jakarta. 2019. Supervised by Ratna Widyati, S.Si, M.Kom and Drs. Mulyono, M.Kom.
-%\vskip1cm
+\textbf {ALDI RAHMANSYAH}. \textbf {Designing a Monitoring Information System For Teaching And Learning Activites Using SIAKAD Web Service in Mathematics Department UNJ}. Thesis. Faculty of Mathematics and Natural Sciences, State University of Jakarta. 2022. Supervised by Med Irzal, M.Kom and Ir. Fariani Hermin Indiyah, M.T.
+\vskip1cm
 
-%Koperasi Mahasiswa Universitas Negeri Jakarta (KOPMA UNJ) is a university-level student organization engaged in cooperatives. KOPMA UNJ is a multi-business cooperative, where the main goal is for cooperative member's prosperity. The cooperative aspects carried out by KOPMA UNJ are savings and business. For the process, the management of deposit funds will be used for purchasing business goods where will give benefits for members called sisa hasil usaha (shu). This thesis aims to build a website-based KOPMA UNJ information system in order to make it easier administrators of KOPMA UNJ to manage savings and cooperative business funds, and also for members of KOPMA UNJ will know the transparency of their deposit funds they have paid. Website-based KOPMA UNJ information system have been developed using a spiral model software development (system development life cycle) method. The spiral model have 4 stages of development, there are needs analysis, system design, implementation, and maintenance. The KOPMA UNJ information system was built using the framework codeigniter for the back-end and framework bootstrap for user front-end display. There are three users in the KOPMA UNJ information system, those are 'admin' where can manage all deposit and business data, 'members' where can find out the transparency of all data, and 'supervisors' where can manage the assesment data.
+Teaching and learning are activites that are part of the three pillars of higher education. In practice, teaching and learning activites need to be monitored and evaluated to ensure the implementations achieves the desired goals and is following the standards set by the university. Monitoring and evaluation of those activities are carried out through forms 05 and 06 by the Quality Assurance Team at the department level. This thesis aims to design and develop a monitoring information system for the teaching and learning activities to help the proses of said monitoring and the activity itself. This system was developed using the SDLC software development method with the Spiral Model. The technology used to develop the system is Laravel for the backend and Vue for the frontend. At the end of the development a UAT (User Acceptance Test) is carried out on both the functional and usabilty side. From the test result, it can be said that the monitoring system that has been developed can be used well and as expected with a percentage of usability of 91.8\% for the entire system.
 
-%\bigskip
-%\noindent
-%\textbf {Keywords:} Website, information system, spiral model, framework codeigniter, framework bootstrap, cooperative, savings, business.
-%\end{abstracteng}
+\bigskip
+\noindent
+\textbf {Keywords:} Website, information system, spiral model, laravel, vue, monitoring, teaching and learning.
+\end{abstracteng}
 
 %-----------------------------------------------------------------
 %Disini akhir masukan Intisari
@@ -210,7 +221,7 @@ Akhir kata, penulis berharap agar proposal yang telah dibuat ini dapat memberika
 
 \include{bab4}
 
-%\include{bab5}
+\include{bab5}
 
 %-----------------------------------------------------------------
 %Disini akhir masukan Bab
